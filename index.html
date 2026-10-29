@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — SkyVanguard</title>
+  <meta name="description" content="Official Privacy Policy and Data Safety disclosure for the SkyVanguard Android application (com.hojiakbar.skyvanguard)." />
+  <style>
+    :root {
+      --bg: #070d19;
+      --card: #0f192d;
+      --border: #1e3354;
+      --accent: #00e5ff;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.68;
+      padding: 28px 16px 64px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px 28px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+    .top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.35);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #ffffff;
+      line-height: 1.25;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+    }
+    .lang-btn {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      color: #070d19;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    h2 {
+      font-size: 19px;
+      color: #ffffff;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-left: 3px solid var(--accent);
+    }
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    ul {
+      margin: 8px 0 16px 22px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 16px 0;
+    }
+    .hidden {
+      display: none;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 22px 18px;
+      }
+      h1 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="top-bar">
+      <div>
+        <span class="badge">SkyVanguard • Official Policy</span>
+        <h1>Privacy Policy</h1>
+        <p class="meta">
+          App: <strong>SkyVanguard</strong> (<code>com.hojiakbar.skyvanguard</code>) &bull; Effective Date: October 29, 2026
+        </p>
+      </div>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button type="button" id="btn-en" class="lang-btn active" onclick="setLang('en')">English</button>
+        <button type="button" id="btn-uz" class="lang-btn" onclick="setLang('uz')">O'zbekcha</button>
+      </div>
+    </div>
+
+    <!-- ENGLISH VERSION (Default for Google Play Global Review) -->
+    <section id="content-en">
+      <p>
+        This Privacy Policy explains how <strong>SkyVanguard</strong> ("we", "our", or "the App"), published under package identifier
+        <code>com.hojiakbar.skyvanguard</code>, collects, uses, stores, and protects user information when you install and play the game on Android devices.
+      </p>
+
+      <h2>1. Information We Collect and How We Use It</h2>
+      <p>SkyVanguard collects only the minimum data strictly necessary to provide cloud account sign-in, save game progress across devices, and power online leaderboards and 1v1 multiplayer matches:</p>
+      <ul>
+        <li>
+          <strong>Account &amp; Authentication Data (Google Sign-In / Firebase Authentication):</strong>
+          When you sign in with Google, we receive your unique Firebase User ID (<code>uid</code>), basic profile display name, and email address solely to authenticate your pilot account and prevent unauthorized access.
+        </li>
+        <li>
+          <strong>Gameplay Progress &amp; Leaderboard Data (Cloud Firestore):</strong>
+          We store your chosen in-game pilot callsign, virtual credits, unlocked aircraft and camouflage skins, subsystem upgrade levels, match scores, win/kill statistics, and temporary 1v1 PvP room state so your progress is preserved if you reinstall the app or switch devices.
+        </li>
+        <li>
+          <strong>Basic Network &amp; Diagnostic State:</strong>
+          Standard network connectivity status is checked locally to synchronize cloud saves and online rooms reliably.
+        </li>
+      </ul>
+      <div class="box">
+        <strong>What We Do NOT Collect:</strong> SkyVanguard does <strong>not</strong> access or collect your GPS location, camera, microphone, contacts, SMS, photos/files, or advertising identifiers. We do <strong>not</strong> sell, rent, or trade user data to any third parties.
+      </div>
+
+      <h2>2. Device Permissions</h2>
+      <ul>
+        <li><code>android.permission.INTERNET</code> — Required for Google Sign-In, cloud profile synchronization, leaderboards, and 1v1 PvP multiplayer.</li>
+        <li><code>android.permission.ACCESS_NETWORK_STATE</code> — Used to verify active internet connectivity before cloud operations.</li>
+        <li><code>android.permission.VIBRATE</code> — Used exclusively for in-game tactile haptic feedback during flight and combat events.</li>
+      </ul>
+
+      <h2>3. Third-Party Service Providers</h2>
+      <p>The App uses trusted Google platform infrastructure to operate authentication and cloud database features. These services process data in accordance with their own privacy policies:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services &amp; Google Sign-In</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase Authentication &amp; Cloud Firestore</a></li>
+      </ul>
+
+      <h2>4. Data Security</h2>
+      <p>
+        All data transmitted between SkyVanguard and Google Firebase servers is encrypted in transit using industry-standard HTTPS/TLS (SSL). Database access is restricted by server-side Firebase Security Rules so that only the authenticated account owner can modify their own pilot profile.
+      </p>
+
+      <h2 id="account-deletion">5. Data Retention &amp; Account / Data Deletion</h2>
+      <p>
+        We retain your cloud game profile for as long as your account remains active. You have the right to request complete deletion of your SkyVanguard account and all associated personal and gameplay data (Firebase Auth record, pilot profile, and leaderboard entry) at any time:
+      </p>
+      <div class="box">
+        <p><strong>How to request account and data deletion:</strong></p>
+        <ul>
+          <li>Send an email from the Google address linked to your game account to <a href="mailto:hojiakbarpy@gmail.com?subject=SkyVanguard%20Account%20Deletion%20Request">hojiakbarpy@gmail.com</a> with the subject <strong>"SkyVanguard Account Deletion Request"</strong>.</li>
+          <li>We will permanently delete your authentication record, saved pilot profile, and leaderboard data within <strong>7 business days</strong> and confirm completion by email.</li>
+        </ul>
+      </div>
+
+      <h2>6. Children's Privacy</h2>
+      <p>
+        SkyVanguard does not knowingly collect personal information from children under the age of 13 without verifiable parental consent. If you are a parent or guardian and believe that your child has provided personal data, please contact us at <a href="mailto:hojiakbarpy@gmail.com">hojiakbarpy@gmail.com</a> so we can promptly delete such information.
+      </p>
+
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect app updates or legal requirements. Any changes will be posted on this page with an updated effective date.
+      </p>
+
+      <h2>8. Contact Us</h2>
+      <p>
+        If you have any questions, concerns, or data requests regarding this Privacy Policy or SkyVanguard, please contact the developer at:<br />
+        <strong>Email:</strong> <a href="mailto:hojiakbarpy@gmail.com">hojiakbarpy@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- UZBEK VERSION -->
+    <section id="content-uz" class="hidden">
+      <p>
+        Ushbu Maxfiylik siyosati <strong>SkyVanguard</strong> mobil o'yini (<code>com.hojiakbar.skyvanguard</code>) foydalanuvchilarning ma'lumotlarini qanday yig'ishi, saqlashi va himoya qilishini tushuntiradi.
+      </p>
+
+      <h2>1. Yig'iladigan ma'lumotlar va ulardan foydalanish maqsadi</h2>
+      <p>SkyVanguard faqat hisobga kirish, o'yin natijalarini bulutda saqlash hamda onlayn reyting va 1v1 janglar ishlashi uchun zarur bo'lgan minimal ma'lumotlarni qayta ishlaydi:</p>
+      <ul>
+        <li>
+          <strong>Hisob ma'lumotlari (Google Sign-In / Firebase Authentication):</strong>
+          Google orqali kirganingizda noyob foydalanuvchi identifikatori (<code>uid</code>), ism va elektron pochta manzili faqat uchuvchi profilingizni tasdiqlash uchun ishlatiladi.
+        </li>
+        <li>
+          <strong>O'yin jarayoni va reyting ma'lumotlari (Cloud Firestore):</strong>
+          Chaqiruv nomi (callsign), o'yin kreditlari, ochilgan samolyotlar va bo'yoqlar, texnik kuchaytirish darajalari, jang natijalari hamda 1v1 PvP xona holati ilova qayta o'rnatilganda ham yo'qolmasligi uchun bulutda saqlanadi.
+        </li>
+      </ul>
+      <div class="box">
+        <strong>Biz yig'maydigan ma'lumotlar:</strong> SkyVanguard foydalanuvchining GPS joylashuvi, kamerasi, mikrofoni, kontaktlari, SMS xabarlari yoki shaxsiy media fayllariga kirmaydi. Foydalanuvchi ma'lumotlari uchinchi shaxslarga sotilmaydi va reklama kuzatuvchilari ishlatilmaydi.
+      </div>
+
+      <h2>2. Qurilma ruxsatnomalari</h2>
+      <ul>
+        <li><code>INTERNET</code> va <code>ACCESS_NETWORK_STATE</code> — Google orqali kirish, bulutli profilni sinxronlash, reyting va 1v1 PvP rejimi uchun.</li>
+        <li><code>VIBRATE</code> — Faqat parvoz va jang vaqtida taktil vibratsiya effekti uchun.</li>
+      </ul>
+
+      <h2>3. Uchinchi tomon xizmatlari</h2>
+      <p>Ilova autentifikatsiya va ma'lumotlar bazasi uchun rasmiy Google xizmatlaridan foydalanadi:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services va Google Sign-In</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase Authentication va Cloud Firestore</a></li>
+      </ul>
+
+      <h2>4. Ma'lumotlar xavfsizligi</h2>
+      <p>
+        Ilova va server o'rtasidagi barcha ma'lumotlar HTTPS/TLS (SSL) shifrlash protokoli orqali uzatiladi va Firebase xavfsizlik qoidalari bilan himoyalanadi.
+      </p>
+
+      <h2>5. Hisob va ma'lumotlarni o'chirish</h2>
+      <p>
+        Istalgan vaqtda SkyVanguard hisobingiz va unga bog'liq barcha bulutli ma'lumotlarni to'liq o'chirishni so'rashingiz mumkin. Buning uchun o'yinga ulangan Google pochtangizdan <a href="mailto:hojiakbarpy@gmail.com?subject=SkyVanguard%20Account%20Deletion%20Request">hojiakbarpy@gmail.com</a> manziliga <strong>"SkyVanguard Account Deletion Request"</strong> mavzusida xat yuboring — barcha ma'lumotlar <strong>7 ish kuni</strong> ichida butunlay o'chiriladi.
+      </p>
+
+      <h2>6. Bog'lanish</h2>
+      <p>
+        Savol va murojaatlar uchun dasturchi bilan bog'lanish:<br />
+        <strong>Email:</strong> <a href="mailto:hojiakbarpy@gmail.com">hojiakbarpy@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 SkyVanguard. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      var isUz = lang === 'uz';
+      document.getElementById('content-en').classList.toggle('hidden', isUz);
+      document.getElementById('content-uz').classList.toggle('hidden', !isUz);
+      document.getElementById('btn-en').classList.toggle('active', !isUz);
+      document.getElementById('btn-uz').classList.toggle('active', isUz);
+      document.documentElement.lang = isUz ? 'uz' : 'en';
+    }
+  </script>
+</body>
+</html>
